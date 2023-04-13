@@ -1,0 +1,17 @@
+{
+  "name": "Teste-de-desenvolvimento",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "André Silva Lopes <andresm585359@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
