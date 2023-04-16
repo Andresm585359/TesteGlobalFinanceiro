@@ -2,7 +2,7 @@ const Digimon = require('../models/Digimon');
 
 module.exports = {
 
-    async list(req, res){
+    async search(req, res){
             
         const { level , name } = req.query; 
 
@@ -16,6 +16,13 @@ module.exports = {
                 } 
 
         const list = await Digimon.find(lista);
+
+        return res.json(list);
+    },
+
+    async list(_, res){
+
+        const list = await Digimon.find();
 
         return res.json(list);
     }

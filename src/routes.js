@@ -11,6 +11,7 @@ routes.get('/', HomeController.home);
 routes.post('/store', DigiCrudController.store);
 routes.get('/detail', DigiCrudController.detail);
 routes.get('/list', ListaDigiController.list);
+routes.get('/search', ListaDigiController.search);
 
 
 module.exports = routes;
