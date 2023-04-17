@@ -4,13 +4,12 @@ const axios = require('axios');
 module.exports = {
 
     async store(req, res){
-        //
+        // Fiz essa parte só para salvar no banco 
+        // os digimons que estão no link
         axios.get('https://digimon-api.vercel.app/api/digimon')
         .then(function(response) {
           const jsonData = response.data;
         
-          
-
           for (let i = 0; i < jsonData.length; i++) {
             const instance = jsonData[i];
 

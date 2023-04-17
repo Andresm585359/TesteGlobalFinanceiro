@@ -4,7 +4,7 @@ module.exports = {
 
     async search(req, res){
             
-        const { level , name } = req.query; 
+        const { name , level } = req.query; 
 
         let lista = {};
         if (level !== '' && name !== '') {
@@ -15,6 +15,7 @@ module.exports = {
                 lista = { name };
                 } 
 
+    
         const list = await Digimon.find(lista);
 
         return res.json(list);
