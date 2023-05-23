@@ -7,7 +7,7 @@ Installation
 To install the project, please follow these steps:
 
 Clone the repository: git clone https://github.com/Andresm585359/TesteGlobalFinanceiro
-Install dependencies: npm install
+Install dependencies: npm install, some dependencies are not uptodate, so it may require download
 Configuration
 Before running the application, you need to configure the database. To do this, create a .env file at the root of the project and add the following:
 
